@@ -1,0 +1,95 @@
+.home{
+    margin-top: 100px;
+}
+.home > h1{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgb(0, 0, 0, 0.7);
+}
+.container{
+    margin:2vmax auto;
+    display:flex;
+    width:80vw;
+    justify-content:center;
+    max-width:100%;
+    flex-wrap: wrap;
+}
+.productCard{
+    margin:20px;
+    width:14vmax;
+    display:flex;
+    flex-direction: column;
+    text-decoration:none;
+    color:rgb(48,48,48);
+    margin:10px;
+    transition:all 0.5s;
+    padding-bottom: 10px;
+
+
+}
+
+.productCard > img {
+    width:14vmax;
+   
+
+}
+.starreview{
+    margin:0.5vmax;
+    display:flex;
+    justify-content: flex-start;
+}
+ .starreview > span{
+     margin-top:12px;
+     margin-left: 5px;
+      font-size: 14px;
+      font-family:"Roboto";
+
+ }
+.productCard > p{
+    font-family: "Roboto";
+    font-size:1.2vmax;
+    margin-left:10px
+}
+
+.productCard > span{
+    margin:0.5vmax 0.5vmax;
+    color:tomato;
+    font-size: 18px;
+}
+
+.productCard:hover{
+    box-shadow: 0 0 5px rgba(15,15,15,0.26);
+    transform:translateY(-1vmax)
+}
+    
+@media screen and (max-width:660px) {
+    .productCard > p{
+      font-size:1.7vmax;
+      margin-left: 2px;
+    }
+
+    .starreview{
+        margin: 0vmax;
+        display:block;
+
+    }
+
+    .productCard > span {
+        font-size:1.5vmax;
+
+
+    }
+
+    .starreview > span {
+        margin: 0  0.5vmax;
+        font: 300 1vmax "Roboto"
+    }
+
+
+}
+
